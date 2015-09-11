@@ -11,7 +11,7 @@ black = Color(0x000000, 1.0)
 # Define a line style that is a thin (1 pixel) wide black line
 thinline = LineStyle(1, black)
 myrectangle = RectangleAsset(50, 50, thinline, green)
-mysprites = [Sprite(myrectangle, (x*randint(2,10), x*randint(2,10))) for x in range(50)]
+mysprites = [Sprite(myrectangle, (x*randint(2,10), x*randint(2,10))) for x in range(200)]
 #mysprite = Sprite(myrectangle, (300, 300))
 
 def step():
