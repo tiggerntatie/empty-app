@@ -15,9 +15,11 @@ mysprites = [Sprite(myrectangle, (x*randint(2,10), x*randint(2,10))) for x in ra
 #mysprite = Sprite(myrectangle, (300, 300))
 
 def step():
-  for s in mysprites:
-      s.x += randint(-5,5)
-      s.y += randint(-5,5)
+    dx = randint(-5,5)
+    dy = randint(-5,5)
+    for s in mysprites:
+        s.x += dx
+        s.y += dx
 
 myapp = App()
 myapp.run(step)
