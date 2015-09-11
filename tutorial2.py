@@ -19,8 +19,8 @@ mysprites = [Sprite(myrectangle, (x*randint(2,10), x*randint(2,10))) for x in ra
 def step():
     dx = randint(-5,5)
     dy = randint(-5,5)
-    mysprites[0].x += dx
-    mysprites[0].y += dy
+    mysprites[50].x += dx
+    mysprites[50].y += dy
 
 myapp = App()
 myapp.run(step)
