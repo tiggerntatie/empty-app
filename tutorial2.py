@@ -19,7 +19,7 @@ def step():
     dy = randint(-5,5)
     for s in mysprites:
         s.x += dx
-        s.y += dx
+        s.y += dy
 
 myapp = App()
 myapp.run(step)
