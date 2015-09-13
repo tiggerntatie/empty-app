@@ -17,7 +17,7 @@ purcircle = CircleAsset(5, thinline, purple)
 # Generate a list of sprites that form a line!
 blsprites = [Sprite(mycircle, (x, 100+100*math.sin(math.radians(x)))) for x in xcoordinates]
 resprites = [Sprite(redcircle, (x, 100+100*math.cos(math.radians(x)))) for x in xcoordinates]
-pursprites = [Sprite(pucircle, (100+100*math.cos(math.radians(x))), 100+100*math.cos(math.radians(x)))) for x in xcoordinates]
+pursprites = [Sprite(pucircle, (100+100*math.cos(math.radians(x)), 100+100*math.cos(math.radians(x)))) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
