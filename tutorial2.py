@@ -1,5 +1,6 @@
 from ggame import App, Color, LineStyle, Sprite
 from ggame import CircleAsset
+import math
 
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
@@ -8,10 +9,10 @@ black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
-xcoordinates = range(0, 800, 10)
+xcoordinates = range(0, 360, 10)
 
 # Generate a list of sprites that form a line!
-sprites = [Sprite(mycircle, (x, x*2.5 + 40)) for x in xcoordinates]
+sprites = [Sprite(mycircle, (x, math.sin(math.radians(x))) for x in xcoordinates]
 
 
 myapp = App()
