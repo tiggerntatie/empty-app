@@ -8,7 +8,7 @@ black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
-xcoordinates = range(0, 360, 10)
+xcoordinates = range(0, 800, 10)
 
 # Generate a list of sprites that form a line!
 sprites = [Sprite(mycircle, (x, x*2.5 + 40)) for x in xcoordinates]
