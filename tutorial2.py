@@ -11,10 +11,9 @@ black = Color(0x000000, 1.0)
 
 # Define a line style that is a thin (1 pixel) wide black line
 thinline = LineStyle(1, black)
-mycircle = CircleAsset(5, thinline, blue)
-[Sprite(mycircle, (a, sin(radians(a))*100+50)) for a in range(0,360,5)]
-#mysprites = [Sprite(mycircle, (x*randint(2,10), x*randint(2,10))) for x in range(100)]
-#mysprite = Sprite(myrectangle, (300, 300))
+bluecircle = CircleAsset(5, thinline, blue)
+[Sprite(bluecircle, (a, sin(radians(a))*100+100)) for a in range(0,360,5)]
+[Sprite(redcircle, (a, cos(radians(a))*100+100)) for a in range(0,360,5)]
 
 def step():
     pass
